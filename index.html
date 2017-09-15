@@ -8,35 +8,51 @@
 </head>
 
 <body>
-    <div>
+    <header>
 
+        <h1 class="page-title">Welcome to Multimedia Design and Communication</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade"> <img src="imgs/img_01.png" class="size-img"> </div>
+            <div class="mySlides fade"> <img src="imgs/img_02.png" class="size-img"> </div>
+            <div class="mySlides fade"> <img src="imgs/img_03.png" class="size-img"> </div>
+            <div class="mySlides fade"> <img src="imgs/img_04.png" class="size-img"> </div>
+            <div class="mySlides fade"> <img src="imgs/img_05.png" class="size-img"> </div>
+            <div class="mySlides fade"> <img src="imgs/img_06.png" class="size-img"> </div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+
+        <div class="dotdiv" style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> </div>
+    </header>
+
+<nav>
+    <div>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="160.55px" height="160.55px" viewBox="0 0 160.55 160.55" enable-background="new 0 0 160.55 160.55" xml:space="preserve">
     <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="80.275" cy="80.275" r="80.275" />
     <text class="svg-text" x="60" y="80" font-family="Verdana">GI</text>
 </svg>
-    </div>
+    <h1>General Info</h1>
+        </div>
     <div>
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="160.55px" height="160.55px" viewBox="0 0 160.55 160.55" enable-background="new 0 0 160.55 160.55" xml:space="preserve">
     <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="80.275" cy="80.275" r="80.275" />
     <text class="svg-text" x="60" y="80" font-family="Verdana">CA</text>
 </svg>
-    </div>
+    <h1>Core areas</h1></div>
     <div>
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="160.55px" height="160.55px" viewBox="0 0 160.55 160.55" enable-background="new 0 0 160.55 160.55" xml:space="preserve">
     <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="80.275" cy="80.275" r="80.275" />
     <text class="svg-text" x="60" y="80" font-family="Verdana">S</text>
 </svg>
-    </div>
+    <h1>Specializations</h1></div>
     <div>
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="160.55px" height="160.55px" viewBox="0 0 160.55 160.55" enable-background="new 0 0 160.55 160.55" xml:space="preserve">
     <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="80.275" cy="80.275" r="80.275" />
     <text class="svg-text" x="60" y="80" font-family="Verdana">C</text>
 </svg>
-    </div>
+    <h1>Contact</h1></div>
+    </nav>
 
     <template class="categoryTemplate">
         <section class="category">
@@ -74,6 +90,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="FetchGoogleJSON.js"></script>
     <script src="PrettifyGoogleJSON.js"></script>
+    <script src="slides.js"></script>
     <script>
 //    let main =["General Info","General Info","General Info","General Info", "Stuff", "Stuff", "Stuff"];
 //
@@ -149,40 +166,6 @@
 
             }
             )};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
 </body>
 </html>
