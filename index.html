@@ -46,7 +46,7 @@
 
     <template class="item">
         <div>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg class="modal-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="160.55px" height="160.55px" viewBox="0 0 160.55 160.55" enable-background="new 0 0 160.55 160.55" xml:space="preserve">
     <circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="80.275" cy="80.275" r="80.275" />
     <text class="svg-text" x="60" y="80" font-family="Verdana">Hello</text>
@@ -55,6 +55,12 @@
 </svg>
     </div>
     </template>
+<div class="modal hide">
+            <div class="modal-content">
+                <h3 class="modal-name">data-name</h3>
+                <p class="modal-description">data-longdescription</p>
+            </div>
+        </div>
 
 
 
@@ -87,11 +93,17 @@
     let template = document.querySelector(".item");
     let section = document.querySelector("section");
     let category = document.querySelector(".categoryTemplate");
+        let modal = document.querySelector('.modal');
     let data;
     let lastSeen="";
     let lastSeen2="";
         //1WPxeZQxxMC6eF3WKgjCglS8xeNewHruX6_Jdxr8UdNI
         new FetchGoogleJSON("1WPxeZQxxMC6eF3WKgjCglS8xeNewHruX6_Jdxr8UdNI", show);
+
+           modal.addEventListener('click',function(){
+    modal.classList.add('hide');
+});
+
 
         function show(data){
             console.log(data)
@@ -113,6 +125,19 @@
                 clone.querySelector(".svg-text").textContent = word;
                 clone.querySelector("h1").textContent = item.sectiontitle;
                 clone.querySelector("p").textContent = item.shortdescription;
+
+                    //modal
+                    let modalButton = clone.querySelector('.modal-button');
+
+                modalButton.addEventListener('click',function(){
+                    console.log(item.id);
+
+    modal.querySelector('.modal-name').textContent = item.sectiontitle;
+    modal.querySelector('.modal-description').textContent = item.longdescription;
+    modal.classList.remove('hide');
+                });
+                    //modalend
+
                     section.appendChild(clone);
 
 
