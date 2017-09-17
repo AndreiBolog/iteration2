@@ -1,58 +1,68 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-.hide{
-                display: none;
-            }
-            .modal{
-                position:fixed;
-                z-index: 10;
-                padding-top: 1em;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,0,0,0.7);
-            }
-            .modal-content{
-                background-color: #fefefe;
-                margin:auto;
-                padding: 20px;
-                border: 1px solid #7c1f17;
-                width: 80%;
-            }
-svg{
+.hide {
     display: none;
 }
-.mobile-nav{
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    padding-top: 1em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #7c1f17;
+    width: 80%;
+}
+
+svg {
+    display: none;
+}
+
+.mobile-nav {
     display: block;
 }
+
+
 /* old settings */
 
-nav>a{
+nav>a {
     text-decoration: none;
-    color:white;
-}
-nav>a:hover{
-    color:aquamarine;
+    color: white;
 }
 
+nav>a:hover {
+    color: aquamarine;
+}
+
+
 /* Navigation */
-nav{
-    margin-top:1em;
+
+nav {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-areas: "p";
     align-items: center;
     justify-content: center;
     grid-gap: 2em;
-    background-color:brown;
+    background-color: brown;
 }
-nav>p{
+
+nav>p {
     grid-area: "p";
 }
+
 
 /* Slideshow container */
 
@@ -65,17 +75,23 @@ nav>p{
 .mySlides {
     display: none;
 }
-.size-img{
+
+.size-img {
     width: 100%;
     height: 60vh;
 }
-.page-title{
-    background-color:brown;
-    color:white;
+
+.page-title {
+    background-color: brown;
+    color: white;
     text-align: center;
 }
+
+
 /* Next & previous buttons */
-.prev, .next {
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -89,20 +105,27 @@ nav>p{
     border-radius: 0 3px 3px 0;
 }
 
+
 /* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* The dots/bullets/indicators */
+
 .dot {
-    cursor:pointer;
+    cursor: pointer;
     position: relative;
     z-index: 3;
     height: 13px;
@@ -114,11 +137,14 @@ nav>p{
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
+
 /* Fading animation */
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -127,44 +153,63 @@ nav>p{
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
-@media (min-width: 768px){
-/* Navigation */
-    svg{
+@media (min-width: 768px) {
+    /* Navigation */
+    svg {
         display: block;
     }
-nav{
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: "a a a a";
-    grid-gap: 2em;
-}
-nav > a{
-    display: grid;
-    align-items: center;
-/*    padding: 3em;*/
-    height: 10em;
-    width: 10em;
-    grid-area: "a";
-    margin: auto;
-    border: 1px solid;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-}
-nav >p{
-    align-self: center;
-    overflow: auto;
-    position: absolute;
-    top: 50%;
-}
+    nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "a a a a";
+        grid-gap: 2em;
+        padding: 10px;
+    }
+    nav > a {
+        display: grid;
+        align-items: center;
+        /*    padding: 3em;*/
+        height: 10em;
+        width: 10em;
+        grid-area: "a";
+        margin: auto;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav >p {
+        align-self: center;
+        overflow: auto;
+        position: absolute;
+        top: 50%;
+    }
+    nav > div {
+        display: grid;
+        justify-content: center;
+    }
+    nav > div >h1 {
+        text-align: center;
+    }
+    .category {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
