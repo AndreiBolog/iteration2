@@ -2,6 +2,29 @@
     box-sizing: border-box;
     margin: 0;
 }
+@font-face {
+    font-family: headings;
+    src: url(PlayfairDisplaySC-Regular.ttf);
+}
+@font-face{
+    font-family: paragraph;
+    src: url(CenturyGothic.ttf);
+}
+p{
+   font-family: paragraph;
+}
+h1{
+    font-family: headings;
+}
+div > svg >text{
+    font-family: headings;
+}
+div > svg {
+    overflow: visible;
+}
+div > svg > p{
+    text-overflow: hidden;
+}
 
 .hide {
     display: none;
@@ -28,25 +51,16 @@
 
 svg {
     display: none;
+    overflow: show;
 }
 
 .mobile-nav {
     display: block;
 }
 
-
-/* old settings */
-
-nav>a {
-    text-decoration: none;
-    color: white;
-}
-
-nav>a:hover {
-    color: aquamarine;
-}
-
-
+nav > div >a {
+        text-decoration: none;
+    }
 /* Navigation */
 
 nav {
@@ -56,18 +70,17 @@ nav {
     align-items: center;
     justify-content: center;
     grid-gap: 2em;
-    background-color: brown;
+/*    background-color: brown;*/
 }
 
 nav>p {
     grid-area: "p";
 }
-
-
 /* Slideshow container */
 
 .slideshow-container {
-    width: 95vw;
+/*    width: vw;*/
+
     position: relative;
     margin: auto;
 }
@@ -78,12 +91,12 @@ nav>p {
 
 .size-img {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
 }
 
 .page-title {
-    background-color: brown;
-    color: white;
+/*    background-color: brown;*/
+/*    color: white;*/
     text-align: center;
 }
 
@@ -182,10 +195,11 @@ nav>p {
         grid-gap: 2em;
         padding: 10px;
     }
+/*
     nav > a {
         display: grid;
         align-items: center;
-        /*    padding: 3em;*/
+            padding: 3em;
         height: 10em;
         width: 10em;
         grid-area: "a";
@@ -195,6 +209,7 @@ nav>p {
         text-align: center;
         text-decoration: none;
     }
+*/
     nav >p {
         align-self: center;
         overflow: auto;
@@ -204,12 +219,20 @@ nav>p {
     nav > div {
         display: grid;
         justify-content: center;
+
     }
-    nav > div >h1 {
+    nav > div >a {
+        text-decoration: none;
+    }
+    nav > div >a >h1 {
         text-align: center;
     }
     .category {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+    #header{
+        grid-column: 1/-1;
+    }
     }
 }
