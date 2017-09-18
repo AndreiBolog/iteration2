@@ -29,7 +29,24 @@ div > svg > p{
 .hide {
     display: none;
 }
-
+.category:nth-child(1) > div > svg > circle{
+    stroke: #FFBF26;
+}
+.category:nth-child(1) > div > svg > text{
+   fill: #FFBF26;
+}
+.category:nth-child(2) > div > svg > circle{
+    stroke: #14BEAB;
+}
+.category:nth-child(2) > div > svg > text{
+   fill: #14BEAB;
+}
+.category:nth-child(3) > div > svg > circle{
+    stroke: #9E0F3B;
+}
+.category:nth-child(3) > div > svg > text{
+   fill: #9E0F3B;
+}
 .modal {
     position: fixed;
     z-index: 10;
@@ -99,7 +116,6 @@ nav>p {
     text-align: center;
 }
 
-
 /* Next & previous buttons */
 
 .prev,
@@ -132,29 +148,6 @@ nav>p {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.02);
 }
-
-
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    position: relative;
-    z-index: 3;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
 /* Fading animation */
 
 .fade {
@@ -194,7 +187,7 @@ nav>p {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "a a a a";
         grid-gap: 2em;
-        padding: 10px;
+        padding: 2em;
         position: absolute;
         z-index: 7;
         background-color: rgba(255, 255, 255, 0.8);
@@ -235,8 +228,20 @@ nav>p {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+    .container >.category > div{
+        justify-content: center;
+
+    }
     #header{
         grid-column: 1/-1;
+       text-align: center;
+    }
+    .welcome{
+        width: 300px;
+        position: absolute;
+        z-index: 7;
+        left: 38%;
+        margin-top: 2em;
     }
     }
 }
