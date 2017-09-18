@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: headings;
-    src: url(PlayfairDisplaySC-Regular.ttf);
+    src: url(Fenix.ttf);
 }
 @font-face{
     font-family: paragraph;
@@ -16,7 +16,7 @@ p{
 h1{
     font-family: headings;
 }
-div > svg >text{
+.slideshow-container > nav >div >a > svg >text{
     font-family: headings;
 }
 div > svg {
@@ -51,7 +51,6 @@ div > svg > p{
 
 svg {
     display: none;
-    overflow: show;
 }
 
 .mobile-nav {
@@ -131,7 +130,7 @@ nav>p {
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 
@@ -190,10 +189,15 @@ nav>p {
     }
     nav {
         display: grid;
+        width: 98.7vw;
+        bottom: 0;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "a a a a";
         grid-gap: 2em;
         padding: 10px;
+        position: absolute;
+        z-index: 7;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 /*
     nav > a {
