@@ -1,3 +1,8 @@
+/*
+home button - styling
+modal
+mobile
+*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,12 +15,14 @@
     font-family: paragraph;
     src: url(CenturyGothic.ttf);
 }
-.welcome{
+#homebutton{
+    position: fixed;
+    top: 0;
+    left:0;
+}
+img.welcome{
         width: 300px;
-        position: absolute;
-        z-index: 7;
-        left: 38%;
-        margin-top: 2em;
+        position:static;
     }
 .caruselus{
     display: none;
@@ -82,19 +89,18 @@ div > svg > p{
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #FFBF26;
+    color: white;
     margin: auto;
     padding: 20px;
-    border: 1px solid #7c1f17;
+    border: 0.5em solid #fff;
     width: 80%;
 }
-
+.modal-name{
+    text-align: center;
+}
 nav svg {
     display: none;
-}
-
-.mobile-nav {
-    display: block;
 }
 
 nav > div >a {
@@ -105,15 +111,15 @@ nav > div >a {
 nav {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-areas: "p";
+    grid-template-areas: "h1";
     align-items: center;
     justify-content: center;
     grid-gap: 2em;
 /*    background-color: brown;*/
 }
 
-nav>p {
-    grid-area: "p";
+nav>h1 {
+    grid-area: "h1";
 }
 /* Slideshow container */
 
@@ -283,7 +289,7 @@ nav>p {
        text-align: center;
         font-size: 2em;
     }
-    .welcome{
+    img.welcome{
         width: 300px;
         position: absolute;
         z-index: 7;

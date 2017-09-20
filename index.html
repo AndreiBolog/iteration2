@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <header>
+    <a href="#homeee"><button id="homebutton">HOME</button></a>
+    <header id="homeee">
 
         <div class="slideshow-container">
                    <nav>
@@ -165,8 +166,6 @@
                     let modalButton = clone.querySelector('.modal-button');
 
                     modalButton.addEventListener('click', function () {
-                        console.log(item.id);
-
                         modal.querySelector('.modal-name').textContent = item.sectiontitle;
                         modal.querySelector('.modal-description').textContent = item.longdescription;
                         modal.classList.remove('hide');
