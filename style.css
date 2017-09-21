@@ -1,6 +1,4 @@
 /*
-home button - styling
-modal
 mobile
 */
 * {
@@ -17,8 +15,32 @@ mobile
 }
 #homebutton{
     position: fixed;
-    top: 0;
-    left:0;
+    top: 10px;
+    left:10px;
+    background-color: #f5b58e;
+    color:white;
+    font-family: headings;
+    width:4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#homebutton:hover{
+    animation: scalelogo 1s ease-in-out 1;
+}
+svg:hover{
+    animation: scalelogo 1s ease-in-out 1;
+    cursor: pointer;
+}
+@keyframes scalelogo{
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 img.welcome{
         width: 300px;
