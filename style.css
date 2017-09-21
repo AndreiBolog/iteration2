@@ -11,9 +11,17 @@
     src: url(CenturyGothic.ttf);
 }
 #map {
-        height: 400px;
-        width: 100%;
+    margin-top: 20vh;
+        height: 50vh;
+        width: 50%;
        }
+footer{
+    height: 100vh;
+    width: 100%;
+}
+footer h1{
+    text-align: center;
+}
 #homebutton{
     position: fixed;
     top: 10px;
