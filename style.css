@@ -25,15 +25,15 @@
     cursor: pointer;
 }
 #homebutton:hover{
-    animation: scalelogo 1s ease-in-out 1;
+    animation: scalelogo 0.5s ease-in-out 1;
 }
 svg:hover{
-    animation: scalelogo 1s ease-in-out 1;
+    animation: scalelogo 0.5s ease-in-out 1;
     cursor: pointer;
 }
 @keyframes scalelogo{
-    50%{
-        transform: scale(1.5);
+    20%{
+        transform: scale(1.1);
     }
     100%{
         transform: scale(1);
