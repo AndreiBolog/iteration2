@@ -16,7 +16,8 @@
     border: 0.2em solid #949393;
        }
 footer{
-    height: 100vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
