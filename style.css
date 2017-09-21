@@ -60,6 +60,14 @@ svg:hover{
     animation: scalelogo 0.5s ease-in-out 1;
     cursor: pointer;
 }
+.logo{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    z-index: 9;
+    top: 45%;
+    left: 55%;
+}
 @keyframes scalelogo{
     20%{
         transform: scale(1.1);
