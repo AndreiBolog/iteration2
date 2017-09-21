@@ -113,13 +113,26 @@ div > svg > p{
 .modal-content {
     background-color: #FFBF26;
     color: white;
-    margin: auto;
+    margin: 100px auto;
     padding: 20px;
     border: 0.5em solid #fff;
     width: 80%;
 }
 .modal-name{
     text-align: center;
+}
+#modal-exit{
+    position: fixed;
+    top:10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 0;
+    font-size: 3em;
+    border-radius: 10%;
+}
+#modal-exit:hover{
+    background-color: #7b0000;
 }
 nav svg {
     display: none;
