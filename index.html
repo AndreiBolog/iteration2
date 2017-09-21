@@ -94,7 +94,12 @@
         <footer id="CONTACT">
             <h1>CONTACT</h1>
         <div id="map"></div>
-            <div id="contact-details"></div>
+            <div id="contact-details">
+                <h3>Address: <span>Lygten 16 2400 Copenhagen NV</span></h3>
+                <h3>Phone number: <span>+45 4646 0400</span></h3>
+                <h3>Website: <span>www.kea.dk</span></h3>
+                <h3>Email: <span>kea@kea.dk</span></h3>
+            </div>
              </footer>
 
 
@@ -142,9 +147,9 @@
             });
 
              function initMap() {
-        var uluru = {lat: 55.7022021, lng: 12.5396348};
+        var uluru = {lat: 55.706373, lng: 12.539218};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 17,
           center: uluru
         });
         var marker = new google.maps.Marker({
