@@ -14,6 +14,7 @@
         height: 50vh;
         width: 100%;
     border: 0.2em solid #949393;
+    grid-area: map;
        }
 footer{
     margin-top: 20vh;
@@ -65,8 +66,8 @@ svg:hover{
     height: auto;
     position: absolute;
     z-index: 9;
-    top: 45%;
-    left: 55%;
+    top: 2em;
+    left: 2em;
 }
 @keyframes scalelogo{
     20%{
@@ -352,5 +353,15 @@ nav svg{
     }
     .category:nth-child(3){
         grid-template-columns: 1fr;
+    }
+    .logo{
+        display: none;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "ct"
+            "map"
+            "cd";
     }
 }
